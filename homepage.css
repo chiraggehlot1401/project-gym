@@ -1,0 +1,1187 @@
+*{
+    font-family: 'Titillium Web', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s linear;
+
+
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 60%;
+}
+body{
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    position: fixed;
+    top: 0%; left: 0%;
+    padding: 2rem 3rem;
+    z-index: 10;
+    
+    
+}
+.active{
+    background-color: rgb(35, 32, 32);
+    box-shadow: 0 5px 6px #000;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li{
+    margin: 1rem 1.5rem;
+}
+.head{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 30px;
+}
+.head:hover{
+    background-color: rgb(33, 146, 191);
+    
+}
+
+.logo{
+    margin:0 1.5rem;
+}
+#logo{
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+}
+span{
+    color:rgb(33, 146, 191);;
+    font-size: 4rem;
+}
+header .fa-bars{
+    font-size: 4rem;
+    color: rgb(33, 146, 191);; 
+    cursor: pointer;
+    margin: 0 2rem;
+    z-index: 15;
+    display: none;
+    
+}
+
+header .fa-times{
+    transform: rotate(180deg);
+    font-size: 4rem;
+    color: rgb(33, 146, 191);; 
+    cursor: pointer;
+    margin: 0 2rem;
+    z-index: 15;
+
+}
+
+.nav-toggle{
+   left:0%;
+}
+
+#home{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url("./assets/victor-freitas-WvDYdXDzkhs-unsplash\ \(1\).jpg") , linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    position: relative;
+    text-align: center;
+}   
+
+#home h1{
+    font-size: 9rem;
+    margin: -10px .5rem;
+    color: white;
+}
+#home h3{
+    font-size: 5rem;
+    margin: 0  .5rem;
+    color: rgb(33, 146, 191);
+}
+#home button{
+    margin: 1rem .5rem;
+    font-size: 3rem;
+    width: 15rem;
+    background: transparent;
+    border: .4rem solid rgb(33, 146, 191);
+    outline: none;
+    cursor: pointer;
+    color: rgb(33, 146, 191);
+    font-weight: bold;
+    
+}
+#home button:hover{
+    background-color: rgb(33, 146, 191);
+    color: white;
+}
+.icons{
+    position: absolute;
+    bottom: 3.5rem;
+    right:3.5rem;
+    z-index: 1;
+}
+.icons a{
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+    margin: 0 1rem;
+}
+.icons a:hover{
+    color: rgb(8, 104, 142);
+}
+.shape-img{
+    position: absolute;
+    bottom: -0.4rem; left:0;
+}
+.shape-img img{
+    height: 18rem;
+    width: 100vw;
+}
+
+#features{
+    height: auto;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: rgb(18 165 223);
+    
+}
+
+#features h1{
+    color: white;
+    font-size: 4rem;
+    margin: 2rem 2rem;
+}
+
+#features .container{
+    width: 90vw;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+
+#features .container .cards{
+    height: 45rem;
+    width: 30rem;
+    margin: 2rem;
+    background-color: white;
+
+}
+#features .container .cards:hover{
+    transform: translateY(-3rem);
+    box-shadow: 0 0 1rem  rgb(8, 104, 142);
+}
+
+#features .container .cards img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+#features .container .cards .content{
+    text-align: center;
+    height: 50%;
+    width: 100%;
+}
+#features .container .cards .content h2{
+    font-size: 3rem;
+    color:rgb(18 165 223) ;
+    margin: 1rem 0;
+}
+
+#features .container .cards .content p{
+    font-size: 1rem;
+    padding: .5rem;
+
+}
+
+#features .container .cards .content a button{
+    margin: 1rem .5rem;
+    font-size: 2rem;
+    width: 15rem;
+    background: transparent;
+    border: .4rem solid rgb(33, 146, 191);
+    outline: none;
+    cursor: pointer;
+    color: rgb(33, 146, 191);
+    font-weight: bold;
+    
+}
+#features .container .cards .content a button:hover{
+    background-color: rgb(33, 146, 191);
+    color: white;
+}
+
+#about{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 32, 32);
+    
+}
+
+
+#about img{
+    width:30rem;
+    height: auto;
+    margin-top: 2rem;
+}
+#about .content{
+    width: 90vw;
+    margin: 2rem 5rem;
+   
+    padding-right: 20px;
+}
+#about .content h1{
+    font-size: 4rem;
+    color: rgb(33, 146, 191);
+    padding-top: 10px;
+
+}
+#about .content p{
+    font-size: 1.5rem;
+    color: white;
+    padding-bottom: 5px;
+}
+#about .content .buttons button{
+    padding-right: 5px;
+    margin: 2rem 2rem 2rem 0;
+    font-size: 2rem;
+    width: 15rem;
+    background: transparent;
+    border: .2rem solid rgb(33, 146, 191);
+    outline: none;
+    cursor: pointer;
+    color: rgb(33, 146, 191);
+    font-weight: bold;
+
+}
+#about .content .buttons button:hover{
+    background-color: rgb(33, 146, 191);
+    color: white;
+}
+
+#gallery{
+    display: grid;
+    place-items: center;
+    background-color: rgb(27, 25, 25);
+    width: 100vw;
+    height: auto;
+}
+
+#gallery h1{
+    font-size: 4rem;
+    color:rgb(33, 146, 191);
+    margin: 3rem 0;
+}
+
+#gallery .img-cont{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 2rem;
+    width: 90vw;
+    justify-content: center;
+}
+
+#gallery .img-cont .pics{
+    height: 30rem;
+    width: 30rem;
+    margin: 2rem 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+#gallery .img-cont .pics img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+#gallery .img-cont .pics .info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 100%; left: 0;
+    background-color: rgba(0,0,0,0.7);
+
+    
+}
+
+#gallery .img-cont .pics .info button{
+    
+    margin: 2rem 2rem 2rem 2rem;
+    font-size: 2rem;
+    width: 15rem;
+    background: transparent;
+    border: .2rem solid rgb(33, 146, 191);
+    outline: none;
+    cursor: pointer;
+    color: rgb(33, 146, 191);
+    font-weight: bold;
+}
+#gallery .img-cont .pics .info button:hover{
+    background-color: rgb(33, 146, 191);
+    color: white;
+}
+
+#gallery .img-cont .pics:hover .info{
+    bottom:0;
+}
+
+#gallery .img-cont .model{
+    display: none;
+    position: fixed;
+    top: 0;  left:0;
+    padding-top: 100px;
+    z-index: 25;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+#gallery .img-cont .model .model-content{
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+#gallery .img-cont .model #caption{
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    padding: 2rem 0;
+    color: white;
+    height: 150px;
+}
+
+.model-content , #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom{
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom{
+    from{transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+#gallery .img-cont .model .fa-times{
+    position: absolute;
+    top: 15px; right:35px;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+#gallery .img-cont .model .fa-times:hover , #gallery .img-cont .model .fa-times:focus {
+    color: grey;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#tools{
+    background-color: rgb(35, 32, 32);
+    height: auto;
+    width: 100vw;
+    display: grid;
+}
+
+#tools h1{
+    font-size: 4rem;
+    color:rgb(33, 146, 191);
+    margin: 3rem 0;
+    text-align: center;
+}
+#tools .tab{
+    overflow: hidden;
+    border: 2px solid rgb(27, 25, 25);
+    background-color: rgb(27, 25, 25);
+    display: flex;
+    justify-content: space-around
+}
+#tools .tab button{
+    width:100%;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 3rem;
+    transition: 0.3s;
+    padding: 10px;
+    color:white
+    
+}
+#tools .tab button:hover{
+    background-color: rgb(51, 49, 49);
+}
+#tools .tab button.active{
+    background-color: rgb(34, 32, 32);
+}
+#tools .tab-content{
+    border: 1px solid rgb(27, 25, 25);
+    border-top: none;
+    padding: 50px;
+    display: none;
+    height: auto;
+}
+
+#tools .tab-content h2{
+    color:white;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#tools #CalorieCalc #bmic{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    height: auto;
+}
+
+#tools #CalorieCalc #bmic .gender{
+    color: rgb(33, 146, 191);
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#tools #CalorieCalc #bmic .gender input{
+    height: 2rem;
+    width: 2rem;
+}
+
+#tools #CalorieCalc #bmic div #weight{
+    width: 40vw;
+    background: transparent;
+    border: 2px solid rgb(33, 146, 191);
+    height: 4rem;
+    font-weight: bold;
+    outline: none;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    color: white;
+}
+#tools #CalorieCalc #bmic div #weight::placeholder{
+    color: white;
+}
+#tools #CalorieCalc #bmic div #weight:hover{
+    background-color: rgb(33, 146, 191);
+    color:white;
+}
+
+#tools #CalorieCalc #bmic div #height{
+    width: 40vw;
+    background: transparent;
+    border: 2px solid rgb(33, 146, 191);
+    height: 4rem;
+    font-weight: bold;
+    outline: none;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    color: white;
+}
+#tools #CalorieCalc #bmic div #height::placeholder{
+    color: white;
+}
+#tools #CalorieCalc #bmic div #height:hover{
+    background-color: rgb(33, 146, 191);
+    color:white;
+}
+
+#tools #CalorieCalc #bmic div #age{
+    width: 40vw;
+    background: transparent;
+    border: 2px solid rgb(33, 146, 191);
+    height: 4rem;
+    font-weight: bold;
+    outline: none;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    color: white;
+}
+#tools #CalorieCalc #bmic div #age::placeholder{
+    color: white;
+}
+#tools #CalorieCalc #bmic div #age:hover{
+    background-color: rgb(33, 146, 191);
+    color:white;
+}
+
+#tools #CalorieCalc #bmic div #calculate{
+    margin: 2rem .5rem;
+    font-size: 2rem;
+    width: 25rem;
+    background:rgb(33, 146, 191);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    
+}
+#tools #CalorieCalc #bmic div #calculate:hover{
+    background-color: white;
+    color: rgb(33, 146, 191);
+}
+
+#tools #CalorieCalc #bmic #dropdown{
+    color: rgb(33, 146, 191);
+    font-size: 2.5rem;
+    width: 40vw;
+    height: auto;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+#tools #CalorieCalc #bmic #dropdown #activity{
+    width: 40vw;
+    background: transparent;
+    border: 2px solid rgb(33, 146, 191);
+    height: 4rem;
+    font-weight: bold;
+    outline: none;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    color:white;
+}
+
+#tools #CalorieCalc #bmic #activity option[value="sedentary"]{
+    color: #000;
+}
+#tools #CalorieCalc #bmic #activity option[value="lightlyActive"]{
+    color: #000;
+}
+#tools #CalorieCalc #bmic #activity option[value="moderatelyActive"]{
+    color: #000;
+}
+#tools #CalorieCalc #bmic #activity option[value="veryActive"]{
+    color: #000;
+}
+#tools #CalorieCalc #bmic #activity option[value="extraActive"]{
+    color: #000;
+}
+
+#tools #BMRCalc #bmrc{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    height: auto;
+}
+
+#tools #BMRCalc #bmrc .gender1{
+    color: rgb(33, 146, 191);
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#tools #BMRCalc #bmrc .gender1 input{
+    height: 2rem;
+    width: 2rem;
+}
+
+#tools #BMRCalc #bmrc div #weight1{
+    width: 40vw;
+    background: transparent;
+    border: 2px solid rgb(33, 146, 191);
+    height: 4rem;
+    font-weight: bold;
+    outline: none;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    color: white;
+}
+#tools #BMRCalc #bmrc div #weight1::placeholder{
+    color: white;
+}
+#tools #BMRCalc #bmrc div #weight1:hover{
+    background-color: rgb(33, 146, 191);
+    color:white;
+}
+
+#tools #BMRCalc #bmrc div #height1{
+    width: 40vw;
+    background: transparent;
+    border: 2px solid rgb(33, 146, 191);
+    height: 4rem;
+    font-weight: bold;
+    outline: none;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    color: white;
+}
+#tools #BMRCalc #bmrc div #height1::placeholder{
+    color: white;
+}
+#tools #BMRCalc #bmrc div #height1:hover{
+    background-color: rgb(33, 146, 191);
+    color:white;
+}
+
+#tools #BMRCalc #bmrc div #age1{
+    width: 40vw;
+    background: transparent;
+    border: 2px solid rgb(33, 146, 191);
+    height: 4rem;
+    font-weight: bold;
+    outline: none;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    color: white;
+}
+#tools #BMRCalc #bmrc div #age1::placeholder{
+    color: white;
+}
+#tools #BMRCalc #bmrc div #age1:hover{
+    background-color: rgb(33, 146, 191);
+    color:white;
+}
+
+#tools #BMRCalc #bmrc div #calculatebmr{
+    margin: 2rem .5rem;
+    font-size: 2rem;
+    width: 25rem;
+    background:rgb(33, 146, 191);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    
+}
+#tools #BMRCalc #bmrc div #calculatebmr:hover{
+    background-color: white;
+    color: rgb(33, 146, 191);
+}
+
+#tools #BMICalc #bmical{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    height: auto;
+}
+
+#tools #BMICalc #bmical div #weight2{
+    width: 40vw;
+    background: transparent;
+    border: 2px solid rgb(33, 146, 191);
+    height: 4rem;
+    font-weight: bold;
+    outline: none;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    color: white;
+}
+#tools #BMICalc #bmical div #weight2::placeholder{
+    color: white;
+}
+#tools #BMICalc #bmical div #weight2:hover{
+    background-color: rgb(33, 146, 191);
+    color:white;
+}
+
+#tools #BMICalc #bmical div #height2{
+    width: 40vw;
+    background: transparent;
+    border: 2px solid rgb(33, 146, 191);
+    height: 4rem;
+    font-weight: bold;
+    outline: none;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    color: white;
+}
+#tools #BMICalc #bmical div #height2::placeholder{
+    color: white;
+}
+#tools #BMICalc #bmical div #height2:hover{
+    background-color: rgb(33, 146, 191);
+    color:white;
+}
+
+#tools #BMICalc #bmical div #age2{
+    width: 40vw;
+    background: transparent;
+    border: 2px solid rgb(33, 146, 191);
+    height: 4rem;
+    font-weight: bold;
+    outline: none;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    color: white;
+}
+#tools #BMICalc #bmical div #age2::placeholder{
+    color: white;
+}
+#tools #BMICalc #bmical div #age2:hover{
+    background-color: rgb(33, 146, 191);
+    color:white;
+}
+
+#tools #BMICalc #bmical div #calculatebmi{
+    margin: 2rem .5rem;
+    font-size: 2rem;
+    width: 25rem;
+    background:rgb(33, 146, 191);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    
+}
+#tools #BMICalc #bmical div #calculatebmi:hover{
+    background-color: white;
+    color: rgb(33, 146, 191);
+}
+
+#contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    background: url(./assets/bg1.jpg) , linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#contact form{
+    display: flex;
+    flex-flow: column;
+}
+#contact form h1{
+    font-size: 4rem;
+    color: rgb(33, 146, 191);
+}
+#contact form input{
+    width: 40vw;
+    background: transparent;
+    border: 2px solid rgb(33, 146, 191);
+    height: 4rem;
+    font-weight: bold;
+    outline: none;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    color: white;
+}
+
+#contact form input::placeholder{
+    color: white;
+}
+#contact form input:hover{
+    background-color: rgb(33, 146, 191);
+    color:white;
+    
+}
+#contact form input[type="submit"]{
+    width: 15vw;
+    background-color: rgb(33, 146, 191);
+    cursor: pointer;
+    border: none;
+}
+#contact form input[type="submit"]:hover{
+    background-color: white;
+    color:rgb(33, 146, 191);
+}
+
+#contact form textarea{
+    width: 40vw;
+    background: transparent;
+    border: 2px solid rgb(33, 146, 191);
+    font-weight: bold;
+    outline: none;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    color: white;
+    resize: none;
+}
+#contact form textarea::placeholder{
+    color: white;
+}
+#contact form textarea:hover{
+    background-color: rgb(33, 146, 191);
+    color:white;
+}
+#contact img{
+    width: 30vw;
+    padding-top: 20px;
+}
+#footer{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    background-color:rgb(34, 32, 32); 
+    height: auto;
+}
+#footer .line{
+    color:white;
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+#footer .line span{
+    font-size: 2.5rem;
+
+}
+#footer .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width:90vw;
+    height: auto;
+}
+
+#footer .container .brand{
+    margin: 3rem 0;
+    flex: 1 0 25rem;
+    padding-left: 4rem;
+}
+#footer .container .brand .logo{
+    margin: 0;
+}
+
+#footer .container .brand .icons2{
+    display: flex;
+    flex-flow: column;
+    width:8vw;
+}
+
+#footer .container .brand .icons2 a{
+    text-decoration: none;
+    color: rgb(33, 146, 191);
+    font-size: 3rem;
+    margin: .5rem 0;
+    position: relative;
+    
+}
+#footer .container .brand .icons2 a:hover{
+    color: white;
+}
+#footer .container .brand .icons2 a::after{
+    content: attr(data-text);
+    position: absolute;
+    top: .5rem; left:3.5rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+}
+#footer .container .content{
+    flex: 1 0 25rem;
+}
+
+#footer .container .content .info{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: rgb(33, 146, 191);
+    width: 5rem;
+    height: 16rem;
+    text-align: center;
+}
+#footer .container .content .info a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin: 2rem 0;
+    position: relative;
+}
+
+#footer .container .content .info a::after{
+    content: attr(data-text);
+    position: absolute;
+    top: .5rem; left:5.5rem;
+    width:10rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#footer .container .update{
+    flex: 1 0 25rem;
+    margin-top: 1rem;
+}
+
+#footer .container .update h2{
+    font-size: 3rem;
+    color:  rgb(33, 146, 191);
+    margin-top: 1rem;
+}
+
+#footer .container .update p{
+    font-size: 2rem;
+    color: white;
+}
+
+#footer .container .update  input{
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgb(33, 146, 191);
+    height: 4rem;
+    font-weight: bold;
+    outline: none;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    color: white;
+}
+
+#footer .container .update input::placeholder{
+    color: white;
+}
+#footer .container .update  input:hover{
+    background-color: rgb(33, 146, 191);
+    color:white;
+    
+}
+#footer .container .update  input[type="submit"]{
+    width: 10vw;
+    background-color: rgb(33, 146, 191);
+    cursor: pointer;
+    border: none;
+}
+#footer .container .update  input[type="submit"]:hover{
+    background-color: white;
+    color:rgb(33, 146, 191);
+}
+@media (max-width:940px)
+{
+    html{
+        font-size: 50%;
+    }
+    #tools .tab{
+        width: 100vw;
+    }
+    #tools .tab button{
+        font-size: 1.5rem;
+        
+    }
+    header{
+        width: 100vw;
+    }
+    #tools .tab-content{
+        width: 100vw;
+    }
+    #footer .container .update  input[type="submit"]{
+        width: 10rem;
+    }
+}
+
+@media (max-width:750px)
+{
+    html{
+        font-size: 40%;
+    }
+    #contact img{
+        display: none;
+    }
+    #contact form input{
+        width: 90vw;
+    }
+    #contact form input[type="submit"]{
+        width: 15vw;
+        font-size: 10px;
+    }
+    #contact form textarea{
+        width: 90vw;
+    }
+    #contact h1{
+        margin-top: 2rem;
+        text-align: center;
+    
+    }
+    #tools .tab{
+        width: 100vw;
+    }
+    #tools .tab button{
+        font-size: 1.5rem;
+        
+    }
+    header{
+        width: 100vw;
+    }
+    #tools .tab-content{
+        width: 100vw;
+    }
+    #footer .container .update  input[type="submit"]{
+        width: 10rem;
+    }
+}
+
+
+@media (max-width:620px)
+{
+    header .fa-bars{
+         display: block;
+    }
+
+    header nav{
+        position: fixed;
+        top:0; left:-200%;
+        height: 100vh;
+        width: 80vw;
+        background-color: rgb(32, 29, 29);
+        box-shadow: 30rem 0 0 rgba(0,0,0,.5);
+
+    }
+    header nav ul{
+        height: 100%;
+        flex-flow: column;
+        justify-content: center;
+        
+    }
+    
+    header nav ul li{
+        margin :2rem 0;
+    }
+    .head{
+        margin: 0;
+        font-size: 4rem;
+        color: rgb(33, 146, 191);; 
+        padding: 1rem;
+        border-radius: 30px;
+    }
+    .head:hover{
+        color:white;
+        background-color: rgb(33, 146, 191);
+        
+    }
+    #home h1{
+        font-size: 6rem;
+    
+    }
+    #home h3{
+        font-size: 3.5rem;
+    
+    }
+    .icons{
+        width:6px;
+        margin: 0 1rem;
+        left:0;
+
+    }
+    .icons a{
+        padding: 3px;
+    }
+    .icons a:hover{
+        color: rgb(33, 146, 191);
+    }
+    #about{
+        flex-flow: column;
+    }
+    #about .content{
+        width: 90vw;
+        margin: 2rem 2rem;
+        text-align: center;
+        padding: 2rem;
+    }
+    #about img{
+    height: auto;
+    width: 100%;
+    }
+    #about .content p{
+        padding-bottom: 8px;
+    }
+
+    #gallery .img-cont .model .model-content{
+        width: 100%;
+    }
+    #tools .tab{
+        width: 100vw;
+    }
+    #tools .tab button{
+        font-size: 1.5rem;
+        
+    }
+    #tools #CalorieCalc #bmic{
+        width: 100%;
+    }
+    #tools #CalorieCalc #bmic div #calculate{
+        font-size: 1.5rem;
+        width: 10rem;
+    }
+    #tools #BMRCalc #bmrc{
+        width: 100%;
+    }
+    #tools #BMRCalc #bmrc div #calculatebmr{
+        font-size: 1.5rem;
+        width: 10rem;
+    }
+    #tools #BMICalc #bmical{
+        width: 100%;
+    }
+    #tools #BMICalc #bmical div #calculatebmi{
+        font-size: 1.5rem;
+        width: 10rem;
+    }
+    
+    
+    header{
+        width: 100vw;
+    }
+    #tools .tab-content{
+        width: 100vw;
+    }
+    #footer .container .update  input[type="submit"]{
+        width: 10rem;
+    }
+}
